@@ -14,15 +14,15 @@ What must be true before a piece of work is finished. Not “it works” — the
 
 The definition of done for team 4 is if we perform the action that made the website go down, will it work as intended? If it didn’t cause the website to go down. The team will repeat the action that originally caused the website to go down and confirm that the issue no longer occurs.
 
-Considered done when:
+*Considered done when:*
 
- The action that originally caused the website to go down has been tested again.
- The website remains running after this action is made.
- The feature or action works as intended.
- No new errors or bugs are introduced.
- The changes have been reviewed by the team.
- All required approvals have been received.
- The changes have been successfully merged into the teams main branch.
+ - [ ]The action that originally caused the website to go down has been tested again.
+ - [ ]The website remains running after this action is made.
+ - [ ]The feature or action works as intended.
+ - [ ]No new errors or bugs are introduced.
+ - [ ]The changes have been reviewed by the team.
+ - [ ]All required approvals have been received.
+ - [ ]The changes have been successfully merged into the teams main branch.
 
 ## 3. Sprint length and the cadence of your ceremonies
 
