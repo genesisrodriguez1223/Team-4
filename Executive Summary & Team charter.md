@@ -4,11 +4,11 @@
 
 ## 1. Executive Summary
 
-*
+* The product is a service status and incident framework page that provides the status of a set of services. The page is intended for users who rely on these services and for monitors who keep track of their status. It addresses the need for users to know whether a service is working properly or is currently down. When a problem occurs, the monitors can determine what happened and provide updates about the incident. The page will also notify the appropriate users about any issues with the service.
 
 ## 2. Scope Statement
 
-*
+* Will not include a distributed task queue. (exclusion) 
 
 ## 3. Stakeholder List
 
@@ -18,10 +18,10 @@
 
 * **Users** – Their role serves as the people who use the final product. Their Interest lies in wanting to ensure that what they are using is a product that is reliable and has minimal defects.
 
+* **stakeholder** -  Stakeholders identified with their actual interests, not just titles
 ## 4. Team Charter
 
-*
-
+* Roles and responsibilities are specific and assigned to named people
 ## 5. Success Criteria
 
 * To determine how well an object or product is, the team must take into consideration the following; Does the product hold up to the standards set by the entire team and not just a single opinion? Have the input and outputs that were intended for the object properly understood and gave the necessary outcomes?
