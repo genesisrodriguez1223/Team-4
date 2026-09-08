@@ -20,6 +20,14 @@
 
 * **stakeholder** -  Stakeholders identified with their actual interests, not just titles
 ## 4. Team Charter
+Roles & Responsibilities
+* Genesis - code reviewer responsibility to review the necessary code before submission. Pull request.
+* Madison - Front-end developer responsibility: deals with the customer's view of the app. UI design.
+* Gabriel - Project Manager responsibility: provides the rest of the team with feedback and progress. Provides suggestions as well.
+* James - Back-end developer responsibility: makes sure the app really runs.
+How are decisions made? Decisions will be made as a group. Communication between each other.
+  
+
 
 * Roles and responsibilities are specific and assigned to named people
 ## 5. Success Criteria
