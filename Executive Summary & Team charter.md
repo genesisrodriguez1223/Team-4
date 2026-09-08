@@ -8,7 +8,7 @@
 
 ## 2. Scope Statement
 
-* Will not include a distributed task queue. (exclusion) 
+*
 
 ## 3. Stakeholder List
 
@@ -18,7 +18,7 @@
 
 * **Users** – Their role serves as the people who use the final product. Their Interest lies in wanting to ensure that what they are using is a product that is reliable and has minimal defects.
 
-* **stakeholder** -  Stakeholders identified with their actual interests, not just titles
+* **stakeholder** -  Dr. Bartz and any user. Interest would include designing a playbook that clearly state expectations. 
 ## 4. Team Charter
 As the project moves into the creation and testing stages, situations may arise which causes either stress, disagreements, conflict, or confusion on how to tackle a problem or where the team is in general. Because of this, a team must address the following; What occurs when a team member misses two consecutive meetings? What happens when two or more people disagree on an approach and both of their opinions are strong and valid ways to resolve the problem?
 Roles & Responsibilities
@@ -26,10 +26,8 @@ Roles & Responsibilities
 * Madison - Front-end developer responsibility: deals with the customer's view of the app. UI design.
 * Gabriel - Project Manager responsibility: provides the rest of the team with feedback and progress. Provides suggestions as well.
 * James - Back-end developer responsibility: makes sure the app really runs.
-*1. What happens when a member misses two or more consecutive meetings?
-* 2. What happens when two or more people disagree on an approach and both of their opinions are valid and strong ways to resolve a problem?
-
-* Roles and responsibilities are specific and assigned to named people
+When a team member misses two or more meeting it is the project manager's job to faciitate a meeting to discuss why it occured, and to relsolve this issue, the project manager will have to delegate the progress missed to other team members and procees to begin bringing up to speed the material that person missed. When people disagree on a approach the team will compare the pros and cons of the approach. The team will find a common ground. In a harder decision the project manager will decide for the team whats best.
+Expected availability: Meeting two times a week at most.
 ## 5. Success Criteria
 
 * To determine how well an object or product is, the team must take into consideration the following; Does the product hold up to the standards set by the entire team and not just a single opinion? Have the input and outputs that were intended for the object properly understood and gave the necessary outcomes?
