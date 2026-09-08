@@ -20,14 +20,14 @@
 
 * **stakeholder** -  Stakeholders identified with their actual interests, not just titles
 ## 4. Team Charter
+As the project moves into the creation and testing stages, situations may arise which causes either stress, disagreements, conflict, or confusion on how to tackle a problem or where the team is in general. Because of this, a team must address the following; What occurs when a team member misses two consecutive meetings? What happens when two or more people disagree on an approach and both of their opinions are strong and valid ways to resolve the problem?
 Roles & Responsibilities
 * Genesis - code reviewer responsibility to review the necessary code before submission. Pull request.
 * Madison - Front-end developer responsibility: deals with the customer's view of the app. UI design.
 * Gabriel - Project Manager responsibility: provides the rest of the team with feedback and progress. Provides suggestions as well.
 * James - Back-end developer responsibility: makes sure the app really runs.
-How are decisions made? Decisions will be made as a group. Communication between each other.
-  
-
+*1. What happens when a member misses two or more consecutive meetings?
+* 2. What happens when two or more people disagree on an approach and both of their opinions are valid and strong ways to resolve a problem?
 
 * Roles and responsibilities are specific and assigned to named people
 ## 5. Success Criteria
@@ -37,15 +37,3 @@ How are decisions made? Decisions will be made as a group. Communication between
 ## 6. AI Disclosure Statement
 
 * The use of AI in this team-based project is declared to emphasize that while taking advantage of this resource, it is important to ensure that we interpret the generated content in such a way that the team understands it and can rephrased (the ai generated output) to accurately show the teams level of understanding.
-
-# Team Charter
-
-As the project moves into the creation and testing stages, situations may arise which causes either stress, disagreements, conflict, or confusion on how to tackle a problem or where the team is in general. Because of this, a team must address the following; What occurs when a team member misses two consecutive meetings? What happens when two or more people disagree on an approach and both of their opinions are strong and valid ways to resolve the problem?
-
-## 1. What happens when a member misses two or more consecutive meetings?
-
-*
-
-## 2. What happens when two or more people disagree on an approach and both of their opinions are valid and strong ways to resolve a problem?
-
-*
