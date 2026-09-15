@@ -34,6 +34,35 @@ Who reviews, how many approvals, what a reviewer is expected to check, and what 
 
 Team 4’s pull request and review process will be done by Genesis Rodriguez. There will be three approvals needed. Reviewers are expected to examine the submitted changes, including the code, data, and API-related work. If a review stalls, the review will be reassigned to another team member to collaborate on the issue.
 
- 
+## Playbook v.02  
+Extend the playbook to cover how your team uses AI tools. This supersedes any standalone AI-use agreement.
+
+Required content
+Approved tools. Which tools the team uses, and for what. It is entirely legitimate to approve a tool for some purposes and not others.
+Prompt-log policy. What gets logged, where it lives, and who is responsible for it.
+Rules for AI-assisted code review. If a tool reviews a pull request, does that satisfy your review requirement from v0.1, partially satisfy it, or not count at all? Decide, and say why.
+There is no right answer I am looking for on the third point. Teams that require a human approval regardless and teams that let a tool clear routine changes can both write a defensible policy. What is not defensible is leaving it unaddressed and discovering your position in the middle of a disagreement in week nine.
+
+Submission
+Updated playbook committed to the team repository, with v0.2 clearly marked. One submission per team.
+
+Rubric
+Criterion
+
+Pts
+
+Approved tools named specifically, with their permitted uses - 3
+
+Prompt-log policy states what, where, and who - 2
+
+AI-assisted review policy takes a clear position on whether tool review counts - 3
+
+Position is reasoned rather than asserted - 1
+
+Version marked; committed to the repository - 1
+
+
+
+
 
  
