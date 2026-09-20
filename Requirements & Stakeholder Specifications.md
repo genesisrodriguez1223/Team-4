@@ -27,8 +27,43 @@ There are a few stakeholders to consider during the development of the applicati
     iii.The needs that they want fulfilled is a fully useable, and reliable product that does not have any sort of difficulty operating on as well as completes the basic operational needs 
 
 # 2. Functional Requirements: 
+1) Service Registration
+   The system shall allow admins to configure health checks for registered services.
+   
+2) Health Check Configuration
+   The system shall allow configured health checks to run automatically on a schedule.
+   
+3) Scheduled Health Checks
+   The system should allow configured health checks to run automatically on a schedule
+   
+4) Service Status Display
+   The system shall provide a central status page that displays the current status of monitored services as operating normally, experiencing problems, or unavailable.
+   
+5) Automatic Incident Creation
+The system shall be able to automatically create an incident when a health check identifies a service problem.
+
+6) Incident Updates
+The system shall allow administrators to add updates to an active incident throughout the resolution process.
+
+ 7) Incident Closure
+The system shall allow administrators to close an incident after the issue has been resolved.
 
 # 3. Non-Functional Requirements: 
+
+#### 1) Page Load Time
+The status page shall load within **3 seconds** under normal operating conditions.
+
+#### 2) Notification Time
+ Email and webhook notifications shall be sent within **60 seconds** after a relevant service status change is recorded.
+
+#### 3) Access Control
+Only users with **administrator permissions** shall be allowed to register services, configure health checks, update incidents, and close incidents.
+
+#### 4) Browser Compatibility
+The web application shall function on the **latest versions of Google Chrome, Microsoft Edge, and Mozilla Firefox**.
+
+
+
 
 # 4. User stories & Epics, with acceptance criteria: 
 
