@@ -28,25 +28,25 @@ There are a few stakeholders to consider during the development of the applicati
 
 # 2. Functional Requirements: 
 1) Service Registration
-   The system shall allow admins to configure health checks for registered services.
+   - The system shall allow admins to configure health checks for registered services.
    
 2) Health Check Configuration
-   The system shall allow configured health checks to run automatically on a schedule.
+   - The system shall allow configured health checks to run automatically on a schedule.
    
 3) Scheduled Health Checks
-   The system should allow configured health checks to run automatically on a schedule
+   - The system should allow configured health checks to run automatically on a schedule
    
 4) Service Status Display
-   The system shall provide a central status page that displays the current status of monitored services as operating normally, experiencing problems, or unavailable.
+   - The system shall provide a central status page that displays the current status of monitored services as operating normally, experiencing problems, or unavailable.
    
 5) Automatic Incident Creation
-The system shall be able to automatically create an incident when a health check identifies a service problem.
+  - The system shall be able to automatically create an incident when a health check identifies a service problem.
 
 6) Incident Updates
-The system shall allow administrators to add updates to an active incident throughout the resolution process.
+  - The system shall allow administrators to add updates to an active incident throughout the resolution process.
 
  7) Incident Closure
-The system shall allow administrators to close an incident after the issue has been resolved.
+  - The system shall allow administrators to close an incident after the issue has been resolved.
 
 # 3. Non-Functional Requirements: 
 
@@ -74,8 +74,8 @@ The web application shall function on the **latest versions of Google Chrome, Mi
 | Section | Author | Contributions |
 |----------|---------|---------------|
 | Stakeholder Analysis | Gabriel | Defined the stakeholder list and what their interests & Needs are |
-| Functional requirements | (Insert name here) | (Insert description of what you did) |
-| Non-Functional Requirements | (Insert name here) | (Insert description of what you did) |
+| Functional requirements | Genesis | Entered functional requirements for site |
+| Non-Functional Requirements | Genesis | Entered non-functional requirements for site |
 | User stories and epics |(Insert name here)  | (Insert description of what you did) |
 | Traceability | (Insert name here) | (Insert description of what you did) |
 | Authorship Map | Team | Provides insight into what the team did during the creation of this assignment |
