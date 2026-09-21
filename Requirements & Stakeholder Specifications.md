@@ -157,6 +157,80 @@ The web application shall function on the **latest versions of Google Chrome, Mi
 - **Given** an incident has been closed, **then** it remains available in the service's incident history.
 - **Given** an incident is closed, **then** the public status page reflects that the incident has been resolved.
 
+## Epic 4 — User Subscriptions & Notifications
+
+### User Story 8 — Subscribe to a Service
+
+**As a user, I want to subscribe to a service so that I can receive notifications when its status changes.**
+
+### Acceptance Criteria
+
+- **Given** a user is viewing a monitored service, **when** they choose to subscribe, **then** the system allows them to create a subscription.
+- **Given** a user creates a subscription, **then** the subscription is associated with the selected service.
+- **Given** a user has subscribed to a service, **then** the system stores the user's subscription information.
+- **Given** a user has an existing subscription, **when** they choose to unsubscribe, **then** the system removes or disables the subscription.
+- **Given** a user is subscribed to a service, **then** the subscription remains active until the user unsubscribes or the system disables it.
+
+---
+
+## User Story 9 — Receive Service Notifications
+
+**As a subscribed user, I want to receive notifications when a service experiences a relevant status change so that I know when a problem occurs or is resolved.**
+
+### Acceptance Criteria
+
+- **Given** a user is subscribed to a service, **when** the service experiences a relevant status change, **then** the system generates a notification.
+- **Given** a user has selected email notifications, **when** a relevant status change occurs, **then** the system sends an email notification.
+- **Given** a user has configured a webhook, **when** a relevant status change occurs, **then** the system sends the notification to the configured webhook.
+- **Given** a notification is generated, **then** it identifies the affected service and its current status.
+- **Given** a notification cannot be delivered, **then** the system records the delivery failure for administrative review.
+
+
+## Epic 5 — AI-Assisted Incident Communication
+
+### User Story 10 — Generate an AI Incident Summary
+
+**As an administrator, I want to generate an AI-assisted incident summary from logs and error traces so that I can quickly create a concise public-facing update.**
+
+### Acceptance Criteria
+
+- **Given** an administrator has incident information, **when** they provide relevant log excerpts or error traces, **then** the system can submit the information to the AI summarizer.
+- **Given** the AI receives logs or error traces, **then** it generates a concise summary of the incident.
+- **Given** an AI summary has been generated, **then** the summary is displayed to the administrator for review.
+- **Given** an AI summary is generated, **then** the original logs and error traces are not automatically published as a public status update.
+- **Given** the AI cannot generate a summary, **then** the system informs the administrator and allows them to create an update manually.
+
+---
+
+## User Story 11 — Review an AI-Generated Summary
+
+**As an administrator, I want to review and edit an AI-generated incident summary so that inaccurate or inappropriate information is corrected before it becomes an official public update.**
+
+### Acceptance Criteria
+
+- **Given** an AI-generated summary exists, **when** an administrator opens the summary, **then** the generated content is displayed for review.
+- **Given** an administrator is reviewing the summary, **then** they can edit the generated content.
+- **Given** an administrator approves the summary, **then** the approved content can be used as an official incident update.
+- **Given** an administrator rejects the summary, **then** the summary is not published as an official update.
+- **Given** an AI-generated summary has not been approved by an administrator, **then** the system does not automatically publish it.
+- **Given** an administrator edits an AI-generated summary, **then** the final approved version is used for the official incident communication.
+
+
+## Epic 6 — Administrative Management
+
+### User Story 12 — Manage Services and Incidents
+
+**As an administrator, I want a centralized management dashboard so that I can monitor services and manage incidents from one location.**
+
+### Acceptance Criteria
+
+- **Given** an administrator is logged in, **when** they access the administrative dashboard, **then** the dashboard displays the services managed by the organization.
+- **Given** services are registered, **then** the dashboard displays their current status.
+- **Given** active incidents exist, **then** the dashboard displays the active incidents and their affected services.
+- **Given** an administrator selects a service, **then** they can access the available service management functions.
+- **Given** an administrator selects an incident, **then** they can access the available incident management functions.
+- **Given** an administrator has permission to manage the platform, **then** they can create, update, and manage services and incidents through the dashboard.
+
 # 5. Traceability table: 
 
 # 6. Authorship map: 
