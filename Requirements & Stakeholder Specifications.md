@@ -64,6 +64,99 @@ The web application shall function on the **latest versions of Google Chrome, Mi
 
 # 4. User stories & Epics, with acceptance criteria: 
 
+## Epic 1 — Service & Component Management
+
+### User Story 1 — Register a Service
+
+**As an administrator, I want to register a service so that it can be monitored and displayed on the public status page.**
+### Acceptance Criteria
+
+- **Given** an administrator is logged in, **when** they provide a service name and required information, **then** the service can be registered.
+- **Given** a service has been registered, **when** the administrator views the dashboard, **then** the registered service appears in the service list.
+- **Given** a service has been registered, **when** a user views the public status page, **then** the service appears on the status page.
+- **Given** a service already exists, **when** an administrator attempts to register a duplicate service, **then** the system prevents the duplicate registration.
+---
+### User Story 2 — Configure Service Health Checks
+
+**As an administrator, I want to configure health checks for a service so that the system can determine whether the service is operating normally.**
+### Acceptance Criteria
+
+- **Given** a service has been registered, **when** an administrator configures a health check, **then** the health check is associated with that service.
+- **Given** a health check has been configured, **when** its scheduled time occurs, **then** the system automatically runs the health check.
+- **Given** a registered service, **when** an administrator manually triggers a health check, **then** the system runs the health check immediately.
+- **Given** a health check has been completed, **when** the result is available, **then** the system records the result.
+- **Given** a health check fails, **when** the system processes the result, **then** the associated service is identified as potentially experiencing a problem.
+
+## Epic 2 — Public Service Status
+
+### User Story 3 — View Service Status
+
+**As a user, I want to view the current status of monitored services so that I know whether they are operating normally.**
+
+### Acceptance Criteria
+
+- **Given** the user visits the public status page, **when** the page loads, **then** monitored services are displayed.
+- **Given** a monitored service is displayed, **when** the user views the service, **then** its current status is shown.
+- **Given** a service has a status, **then** the status identifies whether the service is operating normally, experiencing problems, or unavailable.
+- **Given** a health check has been completed, **when** the user views the status page, **then** the displayed service status reflects the most recent available health-check result.
+
+---
+
+### User Story 4 — View Service and Incident History
+
+**As a user, I want to view previous service incidents so that I can understand the service's recent problems and resolutions.**
+
+### Acceptance Criteria
+
+- **Given** a service has previous incidents, **when** the user views the service history, **then** previous incidents are displayed.
+- **Given** an incident is displayed, **then** the incident includes its date and current or final status.
+- **Given** an incident contains updates, **when** the user views the incident, **then** the relevant incident updates are displayed.
+- **Given** an incident has been resolved, **then** the incident is identified as closed or resolved.
+- **Given** a service has no previous incidents, **then** the system displays that no incident history is available.
+
+
+## Epic 3 — Incident Management
+
+### User Story 5 — Create an Incident
+
+**As an administrator, I want to create an incident when a service experiences a problem so that users can be informed about the issue.**
+
+### Acceptance Criteria
+
+- **Given** an administrator is logged in, **when** they create an incident, **then** the incident is associated with the affected service.
+- **Given** a health check fails, **when** the configured incident conditions are met, **then** the system can automatically create an incident.
+- **Given** an administrator identifies a service problem, **when** they manually create an incident, **then** the incident is added to the system.
+- **Given** an incident is created, **then** it has an initial status indicating that the incident is active.
+- **Given** an incident has been created, **then** the incident can be displayed on the public status page.
+
+---
+
+### User Story 6 — Update an Incident
+
+**As an administrator, I want to post updates to an incident so that users can see the progress toward resolving the problem.**
+
+### Acceptance Criteria
+
+- **Given** an active incident exists, **when** an administrator adds an update, **then** the update is associated with the incident.
+- **Given** an administrator submits an incident update, **then** the system records the date and time of the update.
+- **Given** an incident has an update, **when** a user views the incident, **then** the update is displayed on the public status page.
+- **Given** multiple updates exist for an incident, **then** the updates are displayed in chronological order.
+- **Given** an incident is active, **then** administrators can continue adding updates until the incident is resolved.
+
+---
+
+### User Story 7 — Close an Incident
+
+**As an administrator, I want to close a resolved incident and document a post-mortem so that the resolution is recorded for future reference.**
+
+### Acceptance Criteria
+
+- **Given** an active incident has been resolved, **when** an administrator closes the incident, **then** the incident status changes to resolved or closed.
+- **Given** an administrator closes an incident, **then** the system records the date and time of closure.
+- **Given** an incident is being closed, **when** the administrator provides post-mortem information, **then** the information is saved with the incident.
+- **Given** an incident has been closed, **then** it remains available in the service's incident history.
+- **Given** an incident is closed, **then** the public status page reflects that the incident has been resolved.
+
 # 5. Traceability table: 
 
 # 6. Authorship map: 
