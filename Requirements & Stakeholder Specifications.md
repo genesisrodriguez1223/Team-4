@@ -166,7 +166,7 @@ The web application shall function on the **latest versions of Google Chrome, Mi
 | Stakeholder Analysis | Gabriel | Defined the stakeholder list and what their interests & Needs are |
 | Functional requirements | Genesis | Entered functional requirements for site |
 | Non-Functional Requirements | Genesis | Entered non-functional requirements for site |
-| User stories and epics |(Insert name here)  | (Insert description of what you did) |
+| User stories and epics | Madison  | Defined user stories, epics, and acceptance criteria  |
 | Traceability | (Insert name here) | (Insert description of what you did) |
 | Authorship Map | Team | Provides insight into what the team did during the creation of this assignment |
 | AI-Use Disclosure | Gabriel | Disclosed the use of AI and what will it be used for |
