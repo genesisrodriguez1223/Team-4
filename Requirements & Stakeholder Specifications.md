@@ -33,19 +33,16 @@ There are a few stakeholders to consider during the development of the applicati
 2) Health Check Configuration
    - The system shall allow configured health checks to run automatically on a schedule.
    
-3) Scheduled Health Checks
-   - The system should allow configured health checks to run automatically on a schedule
-   
-4) Service Status Display
+3) Service Status Display
    - The system shall provide a central status page that displays the current status of monitored services as operating normally, experiencing problems, or unavailable.
    
-5) Automatic Incident Creation
+4) Automatic Incident Creation
   - The system shall be able to automatically create an incident when a health check identifies a service problem.
 
-6) Incident Updates
+5) Incident Updates
   - The system shall allow administrators to add updates to an active incident throughout the resolution process.
 
- 7) Incident Closure
+ 6) Incident Closure
   - The system shall allow administrators to close an incident after the issue has been resolved.
 
 # 3. Non-Functional Requirements: 
