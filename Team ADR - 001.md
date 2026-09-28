@@ -14,12 +14,16 @@ Django makes many decisions for you, which narrows the field but does not empty 
 
 
 ### Alternatives
+- One alternative taken was the web page indicating whether ‘’ Down’’ or ‘’Up’’. Such as a question ‘’ Is this web page down?’’’ and a check mark with either green or red or yellow. This alternative was not chosen because it provides limited information and does not explain the cause of an outage or incident updates. 
+
+- The second alternative considered was a service status page similar to Steam's. Steam status pages can display a large amount of information about different services, such as population, multiple services, regional server status, server load, user activity, and graphs. However, this approach was not chosen because it includes more information and features than our project needs. 
 
 
 
 
 
 ### Consequences 
+
 
 
 
