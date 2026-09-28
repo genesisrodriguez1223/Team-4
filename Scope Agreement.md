@@ -1,6 +1,5 @@
 # Team Scope Agreement
 
-
 Commit, in writing, to what your team will actually have working by the end of the semester.
 
 This is the assignment where optimism meets the calendar. You have roughly two sprints. Whatever you agree to here is what the sprint 2 and final demonstrations will be judged against — not against your ambitions in September, and not against a moving target you revise every time something slips.
