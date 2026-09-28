@@ -7,6 +7,22 @@ What to submit
 ADR-001 as markdown committed to the team repository, with context, the decision, alternatives considered, and consequences. Submit the repository URL or a direct link.
 Django makes many decisions for you, which narrows the field but does not empty it. Where you put business logic, how you handle authentication, what your app boundaries are, whether you use the ORM directly or behind something — these are all live decisions inside a Django project.
 
+### Context
+
+
+
+
+
+### Alternatives
+
+
+
+
+
+### Consequences 
+
+
+
 
 
 Rubric , Criterion , Pts
