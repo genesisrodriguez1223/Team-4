@@ -1,47 +1,50 @@
-# Team ADR - 001
+# Team ADR-001
 
-One architecture decision record for one real decision your team has made.
-You are each writing an ADR for your own solo app at IAP M4. This is the team version, and the difference matters: this one had to be agreed. An ADR that four people signed off on is a different artifact from one you wrote alone, and the alternatives section should show that more than one position was actually in the room.
+## Context
 
-What to submit
-ADR-001 as markdown committed to the team repository, with context, the decision, alternatives considered, and consequences. Submit the repository URL or a direct link.
-Django makes many decisions for you, which narrows the field but does not empty it. Where you put business logic, how you handle authentication, what your app boundaries are, whether you use the ORM directly or behind something — these are all live decisions inside a Django project.
+The team’s status page must provide end users with clear information about the condition of monitored services. During team discussions, members expressed different preferences regarding how much information the page should present, ranging from a minimal current-status display to a richer view containing historical availability and incident context.
 
-### Context
+The team needed to balance simplicity and ease of interpretation against the usefulness of providing users with additional context about previous service disruptions. Because the selected design needed to bring together current monitoring results with historical and incident information, it also affected how multiple parts of the application would support the public-facing status experience.
 
+## Decision
 
+The team decided to design the public status page to present:
 
+- The current status of each monitored service
+- Timestamps to show when each monitored service was last checked
+- A visual history of recent service availability and disruptions
+- A related incident information and updates log describing known disruptions and how they progressed toward resolution.
 
+## Alternatives Considered
 
-### Alternatives
-- One alternative taken was the web page indicating whether ‘’ Down’’ or ‘’Up’’. Such as a question ‘’ Is this web page down?’’’ and a check mark with either green or red or yellow. This alternative was not chosen because it provides limited information and does not explain the cause of an outage or incident updates. 
+### Alternative 1: Current Status Only
 
-- The second alternative considered was a service status page similar to Steam's. Steam status pages can display a large amount of information about different services, such as population, multiple services, regional server status, server load, user activity, and graphs. However, this approach was not chosen because it includes more information and features than our project needs. 
+The public status page would display only the present condition of each monitored service, such as operating normally, experiencing problems, or unavailable.
 
+**Reason not chosen:**
 
+This approach would be the simplest to design and understand, but it would provide users with no historical context about previous disruptions. A user could determine whether a service is currently available but would not be able to see whether the service had experienced recent problems or when the service was last checked.
 
+### Alternative 2: Current Status with Historical Availability Indicators Only
 
+The public status page would display the current service condition together with a visual history showing recent periods or dates of normal operation and disruption. The page would show when a disruption occurred, but incident explanations and updates would not be connected to the historical indicators.
 
-### Consequences 
+**Reason not chosen:**
 
+This approach would provide more context than a current-status-only display, but users would still have limited information about what caused a disruption or how the issue progressed toward resolution. The team preferred a design that combines availability history with related incident information so users can understand both when a disruption occurred and the context surrounding it.
 
+## Consequences
 
+### Positive Consequences
 
+- Users can determine the current condition of a monitored service quickly.
+- Users can see when the service was last checked, helping them judge the freshness of the displayed status information.
+- Users can also view recent availability information instead of seeing only the service's present state.
+- Related incident information can explain service disruptions and provide updates on their progression and resolution.
+- The public page provides users with both immediate service condition information and additional context about recent disruptions and their resolution.
 
+### Negative Consequences
 
-Rubric , Criterion , Pts
-
-Context establishes the forces that made a decision necessary - 2
-
-The decision is stated unambiguously - 2
-
-At least two genuine alternatives, each with the reason it was not chosen - 3
-
-Consequences name what is now harder, not only what is now easier - 2
-
-Committed as markdown in the team repository - 1
-
-
-
-
-
+- The public status page will be more complex to design, implement, and test compared with either of the rejected alternatives and reduces the option of keeping the public status page minimal.
+- The application must keep the availability information and related incident information consistent so that users are not shown misleading or mismatched context.
+- The team must define how service disruptions are associated with the incident information presented to users.
